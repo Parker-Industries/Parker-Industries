@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://parker-industries.com/schemas/entity/address.json",
+  "title": "Address",
+  "description": "This is a basic address schema that currently only supports U.S. addresses.",
+  "type": "object",
+  "properties": {
+    "address1": { "type": "string" },
+    "address2": { "type": "string" },
+    "address3": { "type": "string" },
+    "city": { "type": "string" },
+    "state": { "type": "string" },
+    "postalCode": { "type": "string" }
+  },
+  "required": ["address1", "city", "state", "postalCode"],
+  "additionalProperties": false
+}
